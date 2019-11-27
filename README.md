@@ -4,12 +4,12 @@
 
 git, pip, npm
 
-## Установка
+## Как пользоваться
 
-Выполните install.sh
-
-## Запуск
-
-Выполните run.sh для запуска связки
-
-Выполните run_app.sh или run_server.sh для запуска приложения и сервера соответсвенно
+```
+git clone https://github.com/kyosheek/ElectronFetcher2/
+# устанавливает tornado и зависимости в electron
+install.sh
+# запускает связку
+run.sh
+```
