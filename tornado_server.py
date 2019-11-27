@@ -13,6 +13,9 @@ def make_app():
 
 if __name__ == "__main__":
     app = make_app()
-    http_server = tornado.httpserver.HTTPServer(app)
     app.listen(443)
-    tornado.ioloop.IOLoop.current().start()
+        try:
+        tornado.ioloop.IOLoop.instance().start()
+    except KeyboardInterrupt:
+        tornado.ioloop.IOLoop.instance().stop()
+
