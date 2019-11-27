@@ -1,0 +1,23 @@
+{
+  "name": "ArmoSystems-task",
+  "version": "1.0.0",
+  "description": "Test task fro ArmoSystems",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "kyoshee",
+  "devDependencies": {
+    "electron": "^7.1.1",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "com.electron.${name}",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
+}

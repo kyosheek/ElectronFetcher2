@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Test task</title>
+  </head>
+  <body>
+    <canvas id="bg">Your browser does not support canvas</canvas>
+    <h1>I want to get some data!</h1>
+    <p id="p1">
+      Address:
+      <input id="data" placeholder="http://localhost:443" value="http://localhost:443"/>
+    </p>
+    <p id="p2">
+      <button type="button" id="startButton">Get data!</button>
+    </p>
+    <p id="p3">Retrieved data:</p>
+    <div id="retrievedData">
+    </div>
+    <!-- Скрипты -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
