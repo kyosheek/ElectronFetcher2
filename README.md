@@ -7,9 +7,10 @@ git, pip, npm
 ## Как пользоваться
 
 ```
+# Клонируйте репозиторий
 git clone https://github.com/kyosheek/ElectronFetcher2/
-# устанавливает tornado и зависимости в electron
+# Установите tornado и зависимости в electron
 install.sh
-# запускает связку
+# Запустите связку
 run.sh
 ```
